@@ -1,4 +1,4 @@
-## Markdown 101 
+## Markdown Commands 
 Based on: <https://markdownguide.org>
 
 ### Headings
