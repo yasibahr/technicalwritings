@@ -1,11 +1,11 @@
 ## Git Commands
 
 1. **Git --version**: Check Git version and if it's been downloaded
-2. **Git init**: 
+2. **Git init**: Initializes a new Git repository in current directory; use when you want to start version control on a new or existing local project that isn't already in Git
 3. **Git add**: Moves changes from working directory to staging area 
 4. **Git branch**: Tells you which branch you're on
 5. **Git checkout -b branch1**: Switch to branch1
-6. **Git clone** 
+6. **Git clone <repository-url>**: Copies an entire Git repo from a remote location (GitHub, GitLab, etc.) to your local machine  
 7. **Git fetch**: Get all branches
 8. **Git branch -d <branch1>**: Delete a branch 
 9.  **Git commit**: Commit changes
@@ -15,6 +15,7 @@
 13. **Git pull origin master**: Fetch the changes from GitHub and merge them into your local master branch
 14. **Git branch -a**: View all branches, including both local and remote
 15. **Git pull**: If the remote branch gets updated, use this to pull latest changes while you are checked out on that branch
+16. **Git merge master --allow-unrelated-histories**: Force merge by allowing unrelated histories (if combining two repos or syncing with a remote branch that has diverged)
 
 ### How to Pull a Branch with Unsaved Changes (Stage Local Changes)
 1. git add .
