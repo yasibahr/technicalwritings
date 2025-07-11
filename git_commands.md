@@ -28,16 +28,16 @@ Before merging, make sure your local repo is up-to-date with the remote repo.
 
         git checkout branch1
         git pull origin branch1
-        git checkout master
-        git pull origin master 
+        git checkout main
+        git pull origin main 
 
-These commands switch to each branch and pull latest changes from the remote repo (origin) and merge them into your local master branch.
+These commands switch to each branch and pull latest changes from the remote repo (origin) and merge them into your local main branch.
 
 **2. Merge** 
 
-Now that the local branches are up-to-date, you can merge your branch1 into master.
+Now that the local branches are up-to-date, you can merge your branch1 into main.
 
-        git checkout master
+        git checkout main
         git merge branch1 
 
 If there are no conflicts, merge may be automatically committed. If there are conflicts, Git will ask you to resolve them before completing the merge.
