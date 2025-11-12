@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML/CSS/JS Demo</title>
+    <style>
+        body { font-family: Arial; }
+        .highlight { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1 id="greeting">Hello!</h1>
+    <button id="btn">Click Me</button>
+
+    <script>
+        // Variables
+        let message = "Hello, JavaScript!";
+        let counter = 0;
+
+        // Event Listener
+        document.getElementById("btn").onclick = () => {
+            counter++;
+            document.getElementById("greeting").innerText = `${message} Clicked ${counter} times`;
+            document.getElementById("greeting").classList.toggle("highlight");
+            console.log(`Button clicked ${counter} times`);
+        };
+
+        // Loop example
+        console.log("Numbers 0 to 4:");
+        for(let i=0;i<5;i++) console.log(i);
+    </script>
+</body>
+</html>

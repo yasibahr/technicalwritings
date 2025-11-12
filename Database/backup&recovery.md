@@ -1,6 +1,13 @@
 ## Backup & Recovery
+To prevent data loss, enable recovery, and make sure the system can be restored in the event of a failure, crash, corruption, or accidental deletion.
 
-### Step 1: Preparation - Unlock SYSBACKUP 
+This process uses:
+- RMAN (Oracle Recovery Manager)
+- FRA (Fast Recovery Area)
+- Archived Redo Logs
+
+### Step 1: Set Up Users & Access
+Unlock and configure the SYSBACKUP account, which is used by RMAN for secure backup operations 
 
 Before data is lost, schedule regular backups and store backups in a safe location (disk, external storage, cloud).
 - **Full backup**: Saves entire DB
